@@ -1,0 +1,21 @@
+version: '2'
+services:
+  phpunit_runner_7:
+    image: prophusion/prophusion-base
+    environment:
+      - PHP_VERSION=7.0.12
+      - CONTAINER_CMD=/app/vendor/bin/phpunit /app/tests
+    volumes:
+      - .:/app
+      - php-builds:/usr/local/phpenv/versions
+  phpunit_runner_5_6:
+    image: prophusion/prophusion-base
+    environment:
+      - PHP_VERSION=5.6.25
+      - CONTAINER_CMD=/app/vendor/bin/phpunit /app/tests
+    volumes:
+      - .:/app
+      - php-builds:/usr/local/phpenv/versions
+
+volumes:
+  php-builds: {}

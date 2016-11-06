@@ -1,0 +1,21 @@
+{
+    "name": "root/prophusion-demo",
+    "type": "project",
+    "require-dev": {
+        "phpunit/phpunit": "^4.8"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael Baynton",
+            "email": "mike@mbaynton.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "config": {
+	"platform": {
+	    "php": "5.4.0"
+	 }
+    }
+}
